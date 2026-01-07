@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #eee;
+}  
+    
+.container{   
+    max-width:  800px;
+    margin:auto; /*vaba rumm servades ehk keskele*/
+    background-color: #fff;
+}
+
+.header{
+    background-color: #666;
+    color: #fff;
+    line-height: 100px;
+}
+
+.nav{
+    background-color: #000;
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+}
+    
+.nav ul{  
+    height: 60px;
+    list-style: none;
+}
+
+.nav li{
+    display: block; /* teeb kastiks */
+    float: left; /* joondab kastid vasakule */
+    line-height: 40px;
+    /*padding-right: 20px; TEEB SAMA ASJA */
+
+}
+.content{
+    padding: 10px 20px;
+}
+
+.content img{
+    width: 100%;
+}
+
+.content ul{
+    margin-left: 20px;
+}
+
+.footer{
+    background-color: #000;
+    line-height: 60px;
+    color: #fff;
+    padding-left: 20px;
+}
