@@ -1,0 +1,119 @@
+/* Reset */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
+  background: #fff;
+}
+
+/* HERO */
+.hero {
+  height: 320px;
+  background: radial-gradient(circle at 25% 30%, rgba(255,255,255,0.20), rgba(255,255,255,0) 45%),
+              linear-gradient(120deg, #4fb0b6 0%, #0e7e8d 55%, #0b5f6f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.hero-inner { text-align: center; }
+
+.avatar-wrap {
+  width: 74px;
+  height: 74px;
+  border-radius: 999px;
+  border: 5px solid #f3c400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.15);
+  margin-bottom: 14px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  object-fit: cover;
+  display: block;
+}
+
+.title {
+  margin: 0;
+  font-size: 64px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: rgba(255,255,255,0.85);
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* SISU */
+.main { padding: 56px 0 70px; }
+
+.card {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Vasak pilt (piirame ära, et ei läheks hiiglaslikuks) */
+.left-image img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tekst */
+.text h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text p {
+  margin: 0 0 18px;
+  line-height: 1.8;
+  font-size: 13px;
+  color: #1b1b1b;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.linkline {
+  margin-top: 28px;
+  font-size: 13px;
+}
+
+/* FOOTER */
+.footer {
+  background: #f3c400;
+  padding: 16px 24px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Mobiil */
+@media (max-width: 860px) {
+  .title { font-size: 48px; }
+  .card-grid { grid-template-columns: 1fr; }
+  .left-image img { height: 260px; }
+}
